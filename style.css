@@ -5,10 +5,10 @@
     text-decoration: none;
     list-style-type: none;
     font-family: "Mochiy Pop One", sans-serif;
-    font-weight: bold;
     font-style: normal;
     scroll-behavior:smooth;
     text-transform: uppercase;
+    font-weight: bold;
     
 }
 
@@ -95,9 +95,14 @@ body{
     color: rgb(30, 30, 30);
     background-color: #cfa756;
     width: 90%;
+    height: 100%;
     margin-bottom: 5px;
+    padding: 5px 5px;
     border-radius: 5px;
+    font-weight: bold;
 }
+
+
 
 .vote-section .item img{
     width: 250px;
@@ -157,7 +162,7 @@ body{
         margin: 0 20px;
     }
 
-    .vote-section .item {
+    /* .vote-section .item {
         width: 100%;
         margin: 10px 0;
     }
@@ -166,7 +171,7 @@ body{
         width: 200px;
         height: 200px;
     }
-}
+} */
 
 
 @media (max-width: 480px) {
@@ -324,3 +329,44 @@ body{
 .swiper-button-prev,.autoplay-progress{
     color: white;
 }
+
+
+@media (max-width: 768px) {
+    .item {
+        width: 150px; /* Adjust the width for mobile */
+        margin: 5px 10px;
+    }
+    .item h2 {
+        font-size: 1em; 
+        margin: 1px;
+    }
+
+    .section-header h1 {
+        font-size: 1.5rem; /* Adjust the header size on mobile */
+    }
+    .item h2 {
+        font-size: 1em; 
+        margin: 1px;
+    }
+
+}
+
+@media (max-width: 520px) {
+    .item {
+        width: 150px; /* Adjust the width for mobile */
+        margin: 5px 10px;
+    }
+    .item h2 {
+        font-size: 1em; 
+        margin: 1px;
+    }
+
+    .section-header h1 {
+        font-size: 1.5rem; 
+    }
+    .item h2 {
+        font-size: 1em; 
+        margin-bottom: 5px;
+    }
+
+}}
