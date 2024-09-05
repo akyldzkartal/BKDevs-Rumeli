@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Best of Rumeli | 2024</title>
+    <style>
+    
+        .swiper {
+          height: 500px;
+        }
+    
+        .swiper-slide {
+          text-align: center;
+          font-size: 18px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+    
+    
+        .autoplay-progress {
+          position: absolute;
+          right: 16px;
+          bottom: 16px;
+          z-index: 10;
+          width: 48px;
+          height: 48px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: bold;
+          color: var(--swiper-theme-color);
+        }
+    
+        .autoplay-progress svg {
+          --progress: 0;
+          position: absolute;
+          left: 0;
+          top: 0px;
+          z-index: 10;
+          width: 100%;
+          height: 100%;
+          stroke-width: 4px;
+          stroke: var(--swiper-theme-color);
+          fill: none;
+          stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
+          stroke-dasharray: 125.6;
+          transform: rotate(-90deg);
+        }
+      </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="assets/logo.png" alt="">
+            </div>
+            <div class="nav-links">
+                <li><a href="index.html">Oy ver</a></li>
+                <li><a href="">Galeri</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+            </div>
+        </nav>
+       </div>
+    
+       <div class="container" id="swiper">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="assets/galeri/IMG-20240905-WA0006.webp" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/galeri/IMG-20240905-WA0007.webp" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/galeri/IMG-20240905-WA0008.webp" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/galeri/IMG-20240905-WA0009.webp" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/galeri/IMG-20240905-WA00010.webp" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/galeri/IMG-20240905-WA0011.webp" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/galeri/IMG-20240905-WA0012.webp" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/galeri/IMG-20240905-WA0013.webp" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/galeri/IMG-20240905-WA0014.webp" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/galeri/IMG-20240905-WA0015.webp" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/galeri/IMG-20240905-WA0016.webp" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/galeri/IMG-20240905-WA00017.webp" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/galeri/IMG-20240905-WA00018.webp" alt="">
+              </div>
+
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+            <div class="autoplay-progress">
+              <svg viewBox="0 0 48 48">
+                <circle cx="24" cy="24" r="20"></circle>
+              </svg>
+              <span></span>
+            </div>
+          </div>
+       </div>
+   
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+      <script>
+        const progressCircle = document.querySelector(".autoplay-progress svg");
+        const progressContent = document.querySelector(".autoplay-progress span");
+        var swiper = new Swiper(".mySwiper", {
+          spaceBetween: 30,
+          centeredSlides: true,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev"
+          },
+          on: {
+            autoplayTimeLeft(s, time, progress) {
+              progressCircle.style.setProperty("--progress", 1 - progress);
+              progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+            }
+          }
+        });
+      </script>
+</body>
+</html>

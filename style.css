@@ -1,0 +1,326 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "Mochiy Pop One", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    scroll-behavior:smooth;
+    text-transform: uppercase;
+    
+}
+
+body{
+    background-image: url('assets/denemebh.jpg');
+    background-repeat:repeat-y;
+    background-size: cover;
+    background-position: center;
+    height: 10vh;
+}
+
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.navbar{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    align-items: center;
+    color: white;
+}
+
+.nav-links{
+    display: flex;
+    gap: 50px;
+    font-size: 18px;
+}
+
+.nav-links li a{
+    color: white;
+}
+
+.nav-links li a:hover{
+    color: rgb(157, 203, 232);
+}
+
+.navbar .logo img{
+    width: 280px;
+    height: 280px;
+    padding-top: 50px;
+}
+
+.bestof-section{
+    margin-top: 120px;
+}
+
+.section-header{
+    margin: 0 120px;
+    background-color: #cfa756;
+    border-radius: 10px;
+    color: rgb(30, 30, 30);
+}
+
+.section-header h1{
+    text-align: center;
+    padding: 10px 0;
+}
+
+.vote-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding-top: 40px;
+}
+
+.item{
+    border: 2px solid #e9ab30;
+    border-radius: 5px;
+    margin: 5px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.item h2{
+    text-align: center;
+    color: rgb(30, 30, 30);
+    background-color: #cfa756;
+    width: 90%;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.vote-section .item img{
+    width: 250px;
+    height: 250px;
+}
+
+.item:hover{
+    transform: scale(1.05);
+    background-color: #cfa756;
+}
+
+.vote-button{
+    justify-content: center;
+    display: flex;
+    padding-top: 60px;
+}
+
+.vote-button button{
+    background-color: #ca962f;
+    color: white;
+    border: 1px solid #cfa756;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.vote-button button:hover{
+    transform: scale(1.05);
+}
+
+#section-ch{
+    padding: 80px 0;
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding-top: 20px;
+    }
+
+    .navbar .logo img {
+        width: 200px;
+        height: 200px;
+        padding-top: 20px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 20px;
+        font-size: 16px;
+    }
+
+    .section-header {
+        margin: 0 20px;
+    }
+
+    .vote-section .item {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .vote-section .item img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        padding-top: 10px;
+    }
+
+    .navbar .logo img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 15px;
+        font-size: 14px;
+    }
+
+    .section-header h1 {
+        font-size: 24px;
+    }
+
+    .vote-section .item img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .vote-button button {
+        width: 120px;
+        height: 35px;
+    }
+}
+
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    color: white;
+    padding: 80px 0;
+}
+
+.contactForm h1 {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.contactForm h2{
+    font-size: 14px;
+    margin-bottom: 60px;
+    transition: opacity 0.1s linear, transform 0.3s linear;
+}
+
+.contactForm p{
+    transition: opacity 0.1s linear, transform 0.3s linear;
+}
+
+.contactForm input, .contactForm textarea {
+    background-color: white;
+    width: 60%;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 0.1s linear, transform 0.3s linear;
+}
+
+.contactForm textarea {
+    height: auto;
+    padding: 16px;
+    margin-bottom: 25px;
+}
+
+.contactForm input:focus-within, .contactForm textarea:focus-within {
+    outline: none;
+    border-width: 2px;
+}
+
+.contactForm input:focus-within {
+    border-color: #a57109;
+}
+.contactForm textarea:focus-within {
+    border-color: #a57109;
+}
+
+
+.input-header{
+    text-align: left;
+    width: 60%;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.button-64{
+    width: 60%;
+    height: 56px;
+    border: 1px solid #d49210;
+    border-radius: 12px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: opacity 0.1s linear, transform 0.3s linear;
+}
+
+.button-64 a{
+    text-decoration: none;
+    color: white;
+}
+  
+.button-64:hover{
+    transform: scale(1.05);
+    background-color: #a57109;
+}
+
+#ContactUS{
+    padding-top: 20px;
+}
+
+#swiper{
+    padding: 140px 0;
+}
+
+/* Swiper Slide ayarları */
+/* Swiper ayarları */
+.swiper {
+    width: 100%; /* Swiper tam genişlik alır */
+    height: 500px; /* Yüksekliği istediğin gibi ayarlayabilirsin */
+}
+
+/* Swiper Slide ayarları */
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%; /* Tam genişlik ve yükseklik */
+}
+
+/* Resimlerin aynı boyutta görünmesini sağlama */
+.swiper-slide img {
+    width: 400px;
+    height:500px; /* Yükseklik sabit */
+    object-fit: fill; /* Resim kesilerek orantısı korunur */
+    object-position: center; /* Ortalanır */
+}
+
+.swiper-button-next,
+.swiper-button-prev,.autoplay-progress{
+    color: white;
+}
