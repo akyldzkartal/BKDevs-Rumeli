@@ -77,6 +77,10 @@ body{
     padding-top: 40px;
 }
 
+.answer-area{
+    margin-top: 20px;
+}
+
 .item{
     border: 2px solid #e9ab30;
     border-radius: 5px;
@@ -115,15 +119,15 @@ body{
 .vote-button{
     justify-content: center;
     display: flex;
-    padding-top: 60px;
+    padding: 60px 0;
 }
 
 .vote-button button{
     background-color: #ca962f;
     color: white;
     border: 1px solid #cfa756;
-    width: 200px;
-    height: 50px;
+    width: 300px;
+    height: 80px;
     border-radius: 5px;
     cursor: pointer;
 }
@@ -225,6 +229,16 @@ body{
         margin: 1px;
     }
 
+    .main-logo-image img{
+        max-width:  80%;
+    }
+
+    .vote-button .btn{
+        width: 66%;
+        height: 50px;
+    }
+    
+
 }
 
 @media (max-width: 520px) {
@@ -244,6 +258,8 @@ body{
         font-size: 1em; 
         margin-bottom: 5px;
     }
+
+    
 
 }}
 
@@ -378,9 +394,119 @@ body{
 .main-logo-image{
     display: flex;
     justify-content: center;
+    padding-top: 30px;
 }
 
 .main-logo-image img{
-    width: 700px;
-    height: 700px;
+    max-width: 750px;
+    height: auto;
+    width: 100%;
+}
+
+.popup{
+    width: 400px;
+    background:#cfa756;
+    border-radius: 6px;
+    position: fixed; /* absolute yerine fixed */
+    top: 50%; /* Ekranın ortasında */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+
+.popup img{
+    width: 100px;
+    margin-top: -30px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background-color: #cfa756;
+}
+
+.popup h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+
+.popup p{
+    font-size: 14px;
+}
+
+.popup button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #ffdd9a;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    height: 60px;
+}
+
+.btn{
+    font-size: 18px;
+}
+
+
+@media (max-width: 768px) {
+    .popup {
+        width: 90% !important;
+        padding: 0 20px 20px !important;
+    }
+
+    .popup h2 {
+        font-size: 28px !important;
+    }
+
+    .popup p {
+        font-size: 12px !important;
+    }
+
+    .popup button {
+        font-size: 16px !important;
+        height: 50px !important;
+    }
+
+    .popup img {
+        width: 80px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .popup {
+        width: 85% !important;
+        padding: 0 15px 15px !important;
+    }
+
+    .popup h2 {
+        font-size: 24px !important;
+    }
+
+    .popup p {
+        font-size: 10px !important;
+    }
+
+    .popup button {
+        font-size: 14px !important;
+        height: 45px !important;
+    }
+
+    .popup img {
+        width: 70px !important;
+    }
 }
