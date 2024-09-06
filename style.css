@@ -51,6 +51,10 @@ body{
     color: rgb(157, 203, 232);
 }
 
+#bao{
+    font-size: 19px;
+}
+
 .navbar .logo img{
     width: 280px;
     height: 280px;
@@ -246,6 +250,9 @@ body{
         height: 50px;
     }
     
+    .s-font{
+        font-size: 6px;
+    }
 
 }
 
@@ -255,7 +262,7 @@ body{
         margin: 5px 10px;
     }
     .item h2 {
-        font-size: 8px !important; 
+        font-size: 7px !important; 
         margin: 1px;
     }
 
@@ -288,7 +295,10 @@ body{
         font-size: 10px !important;
         display: none;
     }
-    
+
+    #bao{
+        font-size: 6px;
+    }
 
 }}
 
@@ -698,6 +708,5 @@ body{
         display: block;
     }
 }
-
 
 
