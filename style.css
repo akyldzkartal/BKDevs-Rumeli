@@ -143,7 +143,6 @@ body{
 
 @media (max-width: 768px) {
     .navbar {
-        flex-direction: column;
         height: auto;
         padding-top: 20px;
     }
@@ -155,9 +154,9 @@ body{
     }
 
     .nav-links {
-        flex-direction: column;
         gap: 20px;
-        font-size: 16px;
+        font-size: 14px;
+        padding-right: 12px;
     }
 
     .section-header {
@@ -177,10 +176,7 @@ body{
 
 
 @media (max-width: 480px) {
-    .navbar {
-        flex-direction: column;
-        padding-top: 10px;
-    }
+
 
     .navbar .logo img {
         width: 150px;
@@ -188,9 +184,9 @@ body{
     }
 
     .nav-links {
-        flex-direction: column;
         gap: 15px;
-        font-size: 14px;
+        font-size: 12px;
+        padding-right: 10px;
     }
 
     .section-header h1 {
@@ -508,5 +504,69 @@ body{
 
     .popup img {
         width: 70px !important;
+    }
+}
+
+
+/* Tablet ve daha büyük cihazlar için */
+@media (max-width: 1024px) {
+    /* Swiper için yükseklik ve genişlik ayarı */
+    .swiper {
+        height: 400px; /* Tablet ekranları için daha düşük yükseklik */
+    }
+
+    /* Resimlerin boyutlarını ayarlama */
+    .swiper-slide img {
+        width: 300px; 
+        height: 400px; /* Tablet ekranları için resim boyutu ayarı */
+    }
+
+    /* Buton ve autoplay progress ayarları */
+    .swiper-button-next,
+    .swiper-button-prev,
+    .autoplay-progress {
+        font-size: 14px; /* Buton ve progress boyutu küçültme */
+    }
+}
+
+/* Mobil cihazlar için (genişliği 768px ve altı) */
+@media (max-width: 768px) {
+    /* Swiper yükseklik ayarı */
+    .swiper {
+        height: 300px; /* Mobil ekranlar için daha az yükseklik */
+    }
+
+    /* Resimlerin boyutlarını küçültme */
+    .swiper-slide img {
+        width: 250px;
+        height: 300px; /* Mobil ekranlar için daha küçük resimler */
+    }
+
+    /* Buton ve autoplay progress boyutlarını daha da küçültme */
+    .swiper-button-next,
+    .swiper-button-prev,
+    .autoplay-progress {
+        font-size: 12px;
+    }
+}
+
+/* Küçük mobil cihazlar için (genişliği 480px ve altı) */
+@media (max-width: 480px) {
+    /* Swiper yükseklik ayarı */
+    .swiper {
+        height: 250px; /* Küçük ekranlarda daha küçük yükseklik */
+    }
+
+    /* Resimlerin daha da küçülmesi */
+    .swiper-slide img {
+        width: 200px;
+        height: 250px; /* Küçük ekranlar için optimize edilmiş resim boyutu */
+    }
+
+    /* Butonlar ve autoplay progress daha da küçülür */
+    .swiper-button-next,
+    .swiper-button-prev,
+    .autoplay-progress {
+        font-size: 10px;
     }
 }
