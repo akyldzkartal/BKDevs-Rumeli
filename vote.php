@@ -92,12 +92,14 @@ if (isset($_POST['votes'])) {
         logIpAddress($ipsFilePath, $ipAddress);
 
         // Başarılı mesajı ve güncellenmiş oy sayılarını döndür
-        echo json_encode(['message' => 'Oylar başarıyla Gönderildi!' ]);
+        echo json_encode([
+            'message' => 'Oylar başarıyla kaydedildi!',
+            'redirect' => 'newpage.html' // Yönlendirme URL'si
+        ]);
     } else {
         echo json_encode(['message' => 'Oy verisi bulunamadı!']);
     }
 } else {
     echo json_encode(['message' => 'Geçersiz istek!']);
 }
-
 ?>
