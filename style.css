@@ -14,7 +14,6 @@
 
     
 }
-
 body{
     background-image: url('assets/denemebh.jpg');
     background-repeat:repeat-y;
@@ -22,12 +21,10 @@ body{
     background-position: center;
     height: 10vh;
 }
-
 .container{
     max-width: 1170px;
     margin: 0 auto;
 }
-
 .navbar{
     height: 60px;
     display: flex;
@@ -36,25 +33,20 @@ body{
     align-items: center;
     color: white;
 }
-
 .nav-links{
     display: flex;
     gap: 50px;
     font-size: 18px;
 }
-
 .nav-links li a{
     color: white;
 }
-
 .nav-links li a:hover{
     color: rgb(157, 203, 232);
 }
-
 #bao{
     font-size: 19px;
 }
-
 .navbar .logo img{
     width: 280px;
     height: 280px;
@@ -66,12 +58,10 @@ body{
     border-radius: 10px;
     color: rgb(30, 30, 30);
 }
-
 .section-header h1{
     text-align: center;
     padding: 10px 0;
 }
-
 .vote-section{
     display: flex;
     flex-wrap: wrap;
@@ -80,15 +70,12 @@ body{
     gap: 5px;
     padding-top: 40px;
 }
-
 .answer-area{
     margin-top: 20px;
 }
-
 .answer-area:nth-child(1){
     margin-top: -10px;
 }
-
 .item{
     border: 2px solid #e9ab30;
     border-radius: 5px;
@@ -99,7 +86,6 @@ body{
     gap: 10px;
     cursor: pointer;
 }
-
 .item h2{
     text-align: center;
     color: rgb(30, 30, 30);
@@ -113,24 +99,19 @@ body{
     font-size: 20px;
 }
 
-
-
 .vote-section .item img{
     width: 250px;
     height: 250px;
 }
-
 .item:hover{
     transform: scale(1.05);
     background-color: #cfa756;
 }
-
 .vote-button{
     justify-content: center;
     display: flex;
     padding: 60px 0;
 }
-
 .vote-button button{
     background-color: #ca962f;
     color: white;
@@ -140,7 +121,6 @@ body{
     border-radius: 5px;
     cursor: pointer;
 }
-
 .vote-button button:hover{
     transform: scale(1.05);
 }
@@ -148,8 +128,6 @@ body{
 #section-ch{
     padding: 20px 0;
 }
-
-
 @media (max-width: 768px) {
     .navbar {
         height: 80px;
@@ -171,21 +149,7 @@ body{
     .section-header {
         margin: 0 20px;
     }
-
-    /* .vote-section .item {
-        width: 100%;
-        margin: 10px 0;
-    }
-
-    .vote-section .item img {
-        width: 200px;
-        height: 200px;
-    }
-} */
-
-
 @media (max-width: 480px) {
-
 
     .navbar .logo img {
         width: 150px;
@@ -215,13 +179,9 @@ body{
     margin-left: -60px;
     }
 }
-
-
-
-
 @media (max-width: 768px) {
     .item {
-        width: 100px !important; /* Adjust the width for mobile */
+        width: 100px !important; 
         margin: 5px 10px;
     }
     .item h2 {
@@ -230,14 +190,15 @@ body{
     }
 
     .item img {
-        width: 100% !important; /* Make image responsive to parent width */
-        height: auto; /* Maintain aspect ratio */
+        width: 100% !important; 
+        height: auto; 
         height: 100px !important;
     }
 
 
     .section-header h1 {
-        font-size: 1.5rem; /* Adjust the header size on mobile */
+        font-size: 1.5rem; 
+
     }
     .item h2 {
         font-size: 1em; 
@@ -261,7 +222,7 @@ body{
 
 @media (max-width: 520px) {
     .item {
-        width: 150px; /* Adjust the width for mobile */
+        width: 150px; 
         margin: 5px 10px;
     }
     .item h2 {
@@ -269,7 +230,7 @@ body{
         margin: 1px;
     }
     .item {
-        width: 95px !important; /* Adjust the width for mobile */
+        width: 95px !important; 
         margin: 5px 10px;
     }
     .item h2 {
@@ -278,13 +239,10 @@ body{
     }
 
     .item img {
-        width: 100% !important; /* Make image responsive to parent width */
-        height: auto; /* Maintain aspect ratio */
+        width: 100% !important; 
+        height: auto; 
         height: 100px !important;
     }
-
-
-
     .section-header h1 {
         font-size: 1.5rem; 
     }
@@ -301,12 +259,11 @@ body{
     #bao{
         font-size: 6px;
     }
+    #yatan{
+        font-size: 6px !important;
+    }
 
 }}
-
-
-
-
 .contactForm {
     display: flex;
     flex-direction: column;
@@ -315,14 +272,12 @@ body{
     color: white;
     padding: 80px 0;
 }
-
 .contactForm h1 {
     padding-top: 10px;
     text-align: center;
     font-size: 45px;
     margin-bottom: 10px;
 }
-
 .contactForm h2{
     font-size: 14px;
     margin-bottom: 60px;
@@ -332,7 +287,6 @@ body{
 .contactForm p{
     transition: opacity 0.1s linear, transform 0.3s linear;
 }
-
 .contactForm input, .contactForm textarea {
     background-color: white;
     width: 60%;
@@ -346,33 +300,27 @@ body{
     box-sizing: border-box;
     transition: opacity 0.1s linear, transform 0.3s linear;
 }
-
 .contactForm textarea {
     height: auto;
     padding: 16px;
     margin-bottom: 25px;
 }
-
 .contactForm input:focus-within, .contactForm textarea:focus-within {
     outline: none;
     border-width: 2px;
 }
-
 .contactForm input:focus-within {
     border-color: #a57109;
 }
 .contactForm textarea:focus-within {
     border-color: #a57109;
 }
-
-
 .input-header{
     text-align: left;
     width: 60%;
     margin-bottom: 10px;
     font-size: 18px;
 }
-
 .button-64{
     width: 60%;
     height: 56px;
@@ -382,51 +330,37 @@ body{
     cursor: pointer;
     transition: opacity 0.1s linear, transform 0.3s linear;
 }
-
 .button-64 a{
     text-decoration: none;
     color: white;
 }
-  
 .button-64:hover{
     transform: scale(1.05);
     background-color: #a57109;
 }
-
 #ContactUS{
     padding-top: 20px;
 }
-
-
-
 #swiper{
     padding: 140px 0;
 }
-
-/* Swiper Slide ayarları */
-/* Swiper ayarları */
 .swiper {
-    width: 100%; /* Swiper tam genişlik alır */
-    height: 500px; /* Yüksekliği istediğin gibi ayarlayabilirsin */
+    width: 100%; 
+    height: 500px; 
 }
-
-/* Swiper Slide ayarları */
 .swiper-slide {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100%; /* Tam genişlik ve yükseklik */
+    height: 100%; 
 }
-
-/* Resimlerin aynı boyutta görünmesini sağlama */
 .swiper-slide img {
     width: 400px;
-    height:500px; /* Yükseklik sabit */
-    object-fit: fill; /* Resim kesilerek orantısı korunur */
-    object-position: center; /* Ortalanır */
+    height:500px; 
+    object-fit: fill; 
+    object-position: center; 
 }
-
 .swiper-button-next,
 .swiper-button-prev,.autoplay-progress{
     color: white;
@@ -437,96 +371,12 @@ body{
     justify-content: center;
     margin-top: -80px;
 }
-
 .main-logo-image img{
     max-width: 750px;
     height: auto;
     width: 100%;
 }
-
-/* .popup{
-    width: 400px;
-    background:#cfa756;
-    border-radius: 6px;
-    position: fixed; /* absolute yerine fixed */
-    /*top: 50%; /* Ekranın ortasında 
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    padding: 0 30px 30px;
-    color: #333;
-    visibility: hidden;
-    transition: transform 0.4s, top 0.4s;
-}
-
-.open-popup{
-    visibility: visible;
-    top: 50%;
-    transform: translate(-50%,-50%) scale(1);
-}
-
-
-.popup img{
-    width: 100px;
-    margin-top: -30px;
-    border-radius: 50%;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    background-color: #cfa756;
-}
-
-.popup h2{
-    font-size: 38px;
-    font-weight: 500;
-    margin: 30px 0 10px;
-}
-
-.popup p{
-    font-size: 14px;
-}
-
-.popup button{
-    width: 100%;
-    margin-top: 50px;
-    padding: 10px 0;
-    background: #ffdd9a;
-    color: #fff;
-    border: 0;
-    outline: none;
-    font-size: 18px;
-    border-radius: 4px;
-    cursor: pointer;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    height: 60px;
-}
-
-.btn{
-    font-size: 18px;
-} */
-
-
 @media (max-width: 768px) {
-    .popup {
-        width: 90% !important;
-        padding: 0 20px 20px !important;
-    }
-
-    .popup h2 {
-        font-size: 28px !important;
-    }
-
-    .popup p {
-        font-size: 12px !important;
-    }
-
-    .popup button {
-        font-size: 16px !important;
-        height: 50px !important;
-    }
-
-    .popup img {
-        width: 80px !important;
-    }
-
     .main-logo-image{
         margin-top: -90px;
     }
@@ -534,99 +384,57 @@ body{
     .nav{
         margin-right: 20px !important;
     }
+   
 
 }
 
-@media (max-width: 480px) {
-    .popup {
-        width: 85% !important;
-        padding: 0 15px 15px !important;
-    }
-
-    .popup h2 {
-        font-size: 24px !important;
-    }
-
-    .popup p {
-        font-size: 10px !important;
-    }
-
-    .popup button {
-        font-size: 14px !important;
-        height: 45px !important;
-    }
-
-    .popup img {
-        width: 70px !important;
-    }
-}
-
-
-/* Tablet ve daha büyük cihazlar için */
 @media (max-width: 1024px) {
-    /* Swiper için yükseklik ve genişlik ayarı */
+  
     .swiper {
-        height: 400px; /* Tablet ekranları için daha düşük yükseklik */
+        height: 400px;
     }
-
-    /* Resimlerin boyutlarını ayarlama */
     .swiper-slide img {
         width: 300px; 
-        height: 400px; /* Tablet ekranları için resim boyutu ayarı */
+        height: 400px; 
     }
-
-    /* Buton ve autoplay progress ayarları */
     .swiper-button-next,
     .swiper-button-prev,
     .autoplay-progress {
-        font-size: 14px; /* Buton ve progress boyutu küçültme */
+        font-size: 14px; 
     }
 }
-
-/* Mobil cihazlar için (genişliği 768px ve altı) */
 @media (max-width: 768px) {
-    /* Swiper yükseklik ayarı */
+
     .swiper {
         height: 300px;
-        z-index: -1; /* Mobil ekranlar için daha az yükseklik */
+        z-index: -1; 
     }
-
-    /* Resimlerin boyutlarını küçültme */
     .swiper-slide img {
         width: 250px;
-        height: 300px; /* Mobil ekranlar için daha küçük resimler */
+        height: 300px; 
     }
-
-    /* Buton ve autoplay progress boyutlarını daha da küçültme */
     .swiper-button-next,
     .swiper-button-prev,
     .autoplay-progress {
         font-size: 12px;
     }
 }
-
-/* Küçük mobil cihazlar için (genişliği 480px ve altı) */
 @media (max-width: 480px) {
-    /* Swiper yükseklik ayarı */
-    .swiper {
-        height: 250px; /* Küçük ekranlarda daha küçük yükseklik */
-    }
 
-    /* Resimlerin daha da küçülmesi */
+    .swiper {
+        height: 250px; 
+    }
     .swiper-slide img {
         width: 200px;
-        height: 250px; /* Küçük ekranlar için optimize edilmiş resim boyutu */
+        height: 250px; 
     }
-
-    /* Butonlar ve autoplay progress daha da küçülür */
     .swiper-button-next,
     .swiper-button-prev,
     .autoplay-progress {
         font-size: 10px;
     }
+   
 }
-
-
 .off-screen-menu {
     background-color: #333;
     height: 100vh;
@@ -643,16 +451,9 @@ body{
     font-size: 3rem;
     transition: right 0.3s ease;
 }
-
 .off-screen-menu.active {
     right: 0;
 }
-
-
-
-
-
-/* off-screen-menu */
 .off-screen-menu {
     background-color:  rgb(0, 0, 0);
     height: 100vh;
@@ -672,19 +473,11 @@ body{
 .off-screen-menu.active {
     right: 0;
 }
-
-
-
-/* nav */
 nav {
     padding: 1rem;
     display: flex;
     
 }
-
-
-
-/* ham menu */
 .ham-menu {
     display: flex;
     height: 50px;
@@ -723,19 +516,15 @@ nav {
     top: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
 }
-
 .navbar3 {
     color: white;
     display: flex;
     flex-direction: column;
-    gap: 50px;
-
-    
+    gap: 50px;   
 }
 .navbar1{
     color: white; 
 }
-
 .navbarlogo{
     display: flex;
     width: 50px;
@@ -749,7 +538,6 @@ nav {
 margin-top:-50px;
     padding: 0;
 }
-
 .onay-container{
     color: white;
     display: flex;
@@ -759,9 +547,7 @@ margin-top:-50px;
     text-align: center;
     gap: 15px;
 }
-
 .onay{
-    background: purple;
     width: 400px;
     height: 250px;
     display: flex;
@@ -773,9 +559,9 @@ margin-top:-50px;
     position: fixed; 
     text-align: center;
     padding: 0 30px 30px;
-    color: #333;
+    color: #000000;
+    font-weight: bolder;
 }
-
 .onaylogo{
     display: flex;
     justify-content: center;
