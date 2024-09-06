@@ -606,6 +606,7 @@ margin-top:-50px;
     border-radius: 50%;
     color: rgb(30, 30, 30);
     cursor: pointer;
+    display: none;
 }
 
 
