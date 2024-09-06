@@ -6,39 +6,62 @@
     <link rel="stylesheet" href="style.css">
     <title>Best of Rumeli | 2024</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="iletisim.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
 </head>
 <body>
    <div class="container">
-    <nav class="navbar">
-        <div class="logo">
-            <a href="index.html"><img src="assets/logo.png" alt=""></a>
-        </div>
-        <div class="nav-links">
-            <li><a href="index.html">Oy ver</a></li>
-            <li><a href="galeri.html">GALERİ</a></li>
-            <li><a href="iletisim.html">İLETİŞİM</a></li>
-        </div>
+    <div class="off-screen-menu">
+      <ul class="navbar3">
+        <li class="navbar2"><a href="index.html" class="navbar1">OY VER</a></li>
+        <li><a href="galeri.html" class="navbar1">GALERİ</a></li>
+        <li><a href="iletisim.html" class="navbar1">İLETİŞİM</a></li>
+      </ul>
+    </div>
+
+    <nav>
+      <div class="navbarlogo">
+          <a href="index.html"><img src="assets/logo.png" alt=""></a>
+      </div>
+      <div class="ham-menu">
+
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </nav>
    </div>
-    <div class="container" id="ContactUS">
-        <form action="https://api.web3forms.com/submit" method="POST"> 
-            <div class="contactForm"> 
-                <h1 id="pop-up" key="36">İLETİŞİM</h1>
-                <h2 id="animation-d" key="37">Bİze Ulaşın!</h2>
-                <input type="hidden" name="access_key" value="0a590b95-0d47-4d06-a7b9-914a73b4c8a2">
-                <p class="input-header" id="animation-l" key="38">İSİM</p>
-                <input type="text" name="First" placeholder="" required id="animation-l">
-                <p class="input-header" id="animation-l" key="39">Soy İSİM</p>
-                <input type="text" name="Last" placeholder="" required id="animation-l">
-                <p class="input-header" id="animation-l" key="40">E-POSTA</p>
-                <input type="email" name="email" placeholder="" required id="animation-l">
-                <p class="input-header" id="animation-l" key="41">Mesaj</p>
-                <textarea rows="5" cols="60" name="message" placeholder="" required id="animation-l"></textarea>
-                <button class="button-64" role="button" id="animation-d"><span class="text"><a href="" key="42">GÖNDER</a></span></button>
-            </div>
-        </form>
-       </div>
+   <section class="contact-section">
+
+    <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+  
+      <input type="hidden" name="access_key" value="0034f2fd-bfa1-4219-9861-125da139b07e" />
+      <input type="hidden" name="subject" value="New Contact Form Submission from Web3Forms" />
+      <input type="hidden" name="from_name" value="My Website" />
+      <div class="form-group-container">
+        <div class="form-group">
+          <label for="name" class="form-label">İSMİNİZ</label>
+          <input id="name" name="name" class="form-input" placeholder="İSMİNİZ" type="text" />
+        </div>
+        <div class="form-group">
+          <label for="email" class="form-label">E-MAİL</label>
+          <input id="email" name="email" class="form-input" placeholder="E-MAİL" type="email" />
+        </div>
+        <div class="form-group">
+          <label for="phone" class="form-label">TEL NO</label>
+          <input id="phone" name="phone" class="form-input" placeholder="TELEFON NO" type="text" />
+        </div>
+        <div class="form-group">
+          <label for="message" class="form-label">MESAJ</label>
+          <textarea class="form-textarea" id="message" name="message" placeholder="MESAJINIZ"></textarea>
+        </div>
+      </div>
+      <button class="form-submit" type="submit">GÖNDER</button>
+    </form>
+  
+  </section>
+
 </body>
+<script src="app.js"></script>
 </html>
