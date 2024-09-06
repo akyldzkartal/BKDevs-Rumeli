@@ -5,10 +5,13 @@
     text-decoration: none;
     list-style-type: none;
     font-family: "Mochiy Pop One", sans-serif;
-    font-style: normal;
     scroll-behavior:smooth;
     text-transform: uppercase;
+    font-family: "SUSE", sans-serif;
+    font-optical-sizing: auto;
     font-weight: bold;
+    font-style: normal;
+
     
 }
 
@@ -53,11 +56,6 @@ body{
     height: 280px;
     padding-top: 50px;
 }
-
-.bestof-section{
-    margin-top: 120px;
-}
-
 .section-header{
     margin: 0 120px;
     background-color: #cfa756;
@@ -375,4 +373,14 @@ body{
 .swiper-button-next,
 .swiper-button-prev,.autoplay-progress{
     color: white;
+}
+
+.main-logo-image{
+    display: flex;
+    justify-content: center;
+}
+
+.main-logo-image img{
+    width: 700px;
+    height: 700px;
 }
