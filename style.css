@@ -268,7 +268,6 @@ body{
         font-size: 7px !important; 
         margin: 1px;
     }
-
     .item {
         width: 95px !important; /* Adjust the width for mobile */
         margin: 5px 10px;
@@ -445,12 +444,12 @@ body{
     width: 100%;
 }
 
-.popup{
+/* .popup{
     width: 400px;
     background:#cfa756;
     border-radius: 6px;
     position: fixed; /* absolute yerine fixed */
-    top: 50%; /* Ekranın ortasında */
+    /*top: 50%; /* Ekranın ortasında 
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -502,7 +501,7 @@ body{
 
 .btn{
     font-size: 18px;
-}
+} */
 
 
 @media (max-width: 768px) {
@@ -749,4 +748,43 @@ nav {
     width: 200px;
 margin-top:-50px;
     padding: 0;
+}
+
+.onay-container{
+    color: white;
+    display: flex;
+    justify-content: center;
+    height: 700px;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+}
+
+.onay{
+    background: purple;
+    width: 400px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 5%;
+    background:#cfa756;
+    position: fixed; 
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+}
+
+.onaylogo{
+    display: flex;
+    justify-content: center;
+}
+
+.onay img{
+    width: 80px;
+}
+
+#yatan{
+    font-size: 18px;
 }

@@ -68,7 +68,7 @@ if (isset($_POST['votes'])) {
 
         // IP adresinin daha önce kullanılıp kullanılmadığını kontrol et
         if (isIpAddressUsed($ipsFilePath, $ipAddress)) {
-            echo json_encode(['message' => 'Bu IP adresi ile daha önce oy kullanıldı!']);
+            echo json_encode(['message' => 'Bu IP adresi ile daha önce oy kullanıldı! Tekrar Kullanamazsınız']);
             exit;
         }
 

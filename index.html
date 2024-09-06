@@ -80,7 +80,7 @@
                     </div>
                     <div class="item" data-selected="false" data-value="ENGİN ALTAN DÜZYATAN">
                         <img src="assets/adaylar/enginad.webp" alt="">
-                        <h2 class="names"><span class="s-font">ENGİN ALTAN DÜZYATAN</span></h2>
+                        <h2 class="names"><span class="s-font" id="yatan">ENGİN ALTAN DÜZYATAN</span></h2>
                     </div>
                     <div class="item" data-selected="false" data-value="İSMAİL HACIOĞLU">
                         <img src="assets/adaylar/ismail.webp" alt="">
@@ -213,7 +213,7 @@
                         <h2 class="names">RAFET EL  ROMAN</h2>
                     </div>
                     <div class="item" data-selected="false" data-value="TEOMAN">
-                        <img src="assets/adaylar/TEOMAN.webp" alt="">
+                        <img src="assets/adaylar/teoman.webp" alt="">
                         <h2 class="names">TEOMAN</h2>
                     </div>
                 </div>
@@ -544,9 +544,9 @@
                         <img src="assets/adaylar/deniz.webp" alt="">
                         <h2 class="names">DENİZ  DELİÇ</h2>
                     </div>
-                    <div class="item" data-selected="false" data-value="AGA MEHDİ">
+                    <div class="item" data-selected="false" data-value="AGA MEGDİ">
                         <img src="assets/adaylar/aga.webp" alt="">
-                        <h2 class="names">AGA  MEHDİ</h2>
+                        <h2 class="names">AGA  MEGDİ</h2>
                     </div>
                     <div class="item" data-selected="false" data-value="ODUN HERİF">
                         <img src="assets/adaylar/odun.webp" alt="">
@@ -555,13 +555,13 @@
                 </div>
             </div>
             <div class="vote-button">
-                <button type="submit" class="btn" id="submit-vote" onclick="openPopup()">Oy ver!</button>
-                <div class="popup" id="popup">
+                 <button type="submit" class="btn" id="submit-vote" onclick="openPopup()">Oy ver!</button> 
+                <!-- <div class="popup" id="popup">
                     <img src="assets/checkmark.png" alt="">
                     <h2>OYUNUZ ALINDI!</h2>
                     <p>OY VERDİĞİNİZ İÇİN TEŞEKKÜR EDERİZ <br>Rubafed</p>
-                    <button type="button" class="ok-button" onclick="closePopup()">TAMAM</button>
-                </div>
+                     <button type="button" class="ok-button" onclick="closePopup()">TAMAM</button> 
+                </div> -->
             </div>
                 
             </div>
@@ -573,7 +573,7 @@
             </script>
   
         
-      <script>
+      <!-- <script>
         let popup = document.getElementById("popup");
         let hasVoted = false; // Kullanıcının oy verip vermediğini kontrol etmek için flag
     
@@ -587,7 +587,7 @@
         function closePopup(){
             popup.classList.remove("open-popup");
         }
-    </script>
+    </script> -->
 
     <script src="app.js"></script>
 </body>
