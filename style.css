@@ -57,6 +57,10 @@ body{
     background-color: #cfa756;
     border-radius: 10px;
     color: rgb(30, 30, 30);
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;   
 }
 .section-header h1{
     text-align: center;
@@ -418,6 +422,17 @@ body{
     .autoplay-progress {
         font-size: 12px;
     }
+
+
+    .geri-al button{
+        width: 24px !important;
+        height: 24px !important;
+    }
+
+    .hide-section button{
+        width: 100px !important;
+        height: 32px !important;;
+    }
 }
 @media (max-width: 480px) {
 
@@ -450,6 +465,7 @@ body{
     text-align: center;
     font-size: 3rem;
     transition: right 0.3s ease;
+    z-index: 1;
 }
 .off-screen-menu.active {
     right: 0;
@@ -495,6 +511,7 @@ nav {
     top: 50%;
     transform: translate(-50%, -50%);
     transition: .3s ease;
+    z-index: 2;
 }
 .ham-menu span:nth-child(1) {
     top: 25%;
@@ -573,4 +590,41 @@ margin-top:-50px;
 
 #yatan{
     font-size: 18px;
+}
+
+.geri-al {
+    position: absolute;
+    right: 20px; /* Butonun en sağa gitmesini sağlar */
+    cursor: pointer;
+}
+
+.geri-al button{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 50%;
+    color: rgb(30, 30, 30);
+    cursor: pointer;
+}
+
+
+.hidden {
+    display: none; /* Gizlemek için kullanılacak */
+}
+
+.hide-section {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.hide-section button{
+    background-color: #ca962f;
+    color: white;
+    border: 1px solid #cfa756;
+    width: 200px;
+    height: 60px;
+    border-radius: 5px;
+    cursor: pointer;
 }
