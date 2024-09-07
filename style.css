@@ -243,6 +243,9 @@ body{
         font-size: 6px;
     }
 
+    #bayar{
+        font-size: 6px !important;
+    }
 }
 
 @media (max-width: 520px) {
@@ -649,4 +652,8 @@ margin-top:-50px;
     height: 60px;
     border-radius: 5px;
     cursor: pointer;
+}
+
+#bayar{
+    font-size: 18px;
 }
